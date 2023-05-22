@@ -34,12 +34,14 @@ session_start();
         비밀번호 : <input type="password" name="pass" id="pass">    <br>
         <input type="button" value="로그인" onclick="check()">
         <input type="reset" value="취소하기">
-        </form>';
+        </form>
+        <br>
+        <a href="p1.php"> 회원가입 </a>';
     }
     else
     {
         echo"<a href='p3.php'>회원정보 수정</a><br>";
-        echo"회원제 서비스 .........<br>";
+        echo"<a href='game.php'>게임</a><br>";
         echo"<a href='logout.php'>로그아웃</a><br>";
         echo"<a href='p5.php'>회원탈퇴</a><br>";
         

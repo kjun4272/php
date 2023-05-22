@@ -35,7 +35,7 @@
     <a href="p1.php">처음으로</a> -->
     <script>
         alert("저장되었습니다.");
-        location.href = "p1.php";
+        location.href = "index.php";
         </script>
 </body>
 </html>

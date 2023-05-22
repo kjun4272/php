@@ -21,7 +21,9 @@
     mysqli_query($con, $sql);
 
     //3. DB연결 해체
+    
     mysqli_close($con);
+    unset($_SESSION["id"]);
 
 
 ?>

@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        function newwin(){
+            //새창열고 아이디 중복 확인을 실행
+           ttt =  window.open('idcheck.php?uid='+document.ttt.uid.value, 'ttt', 'width=500,height=500');
+        }
         function check(){
             if (document.ttt.uid.value == "")
             {
                 alert("아이디를 입력하세요");
                 return;
             }
-            if ((document.ttt.pass1.value == "") || (document.ttt.pass2.value == ""))
+            if ((document.ttt.pass1.value == "")  || (document.ttt.pass2.value == ""))
             {
                 alert("비밀번호를 입력하세요");
                 return;
@@ -22,7 +26,6 @@
                 alert("비밀번호가 서로 다릅니다");
                 return;
             }
-          
             if (document.ttt.uname.value == "")
             {
                 alert("이름를 입력하세요");
@@ -35,10 +38,10 @@
     </script>
 </head>
 <body>
-
     회원가입 <br>
     <form action="p2.php" method="post" name="ttt">
-    아이디 : <input type="text" name="uid" id="uid">   <br>
+    아이디 : <input type="text" name="uid" id="uid">
+    <input type="button" value="중복확인"onclick="newwin()"> <br>
     비밀번호 : <input type="password" name="pass1" id="pass1">    <br>
     비밀번호 재입력 : <input type="password" name="pass2" id="pass2">    <br>
     이름 : <input type="text" name="uname" id="uname">   <br>
